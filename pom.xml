@@ -234,7 +234,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.0.1</version>
-            <scope>provided</scope>
+           <!--   <scope>provided</scope> -->
         </dependency>
 
         <dependency>
@@ -323,6 +323,7 @@
                 <directory>src/test/resources</directory>
                 <filtering>true</filtering>
                 <includes>
+                
                     <include>**/*.xml</include>
                     <include>**/*.properties</include>
                     <include>**/*.sql</include>

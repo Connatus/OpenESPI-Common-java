@@ -32,8 +32,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.sun.syndication.io.FeedException;
 
+@ContextConfiguration(locations = { "classpath:**spring/test-context.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("/spring/test-context.xml")
+// @ContextConfiguration("/spring/test-context.xml")
 public class ElectricPowerQualitySummaryTests extends XMLTest {
 
 	private ElectricPowerQualitySummary electricPowerQualitySummary;
@@ -54,8 +55,7 @@ public class ElectricPowerQualitySummaryTests extends XMLTest {
 
 	@Test
 	public void unmarshalsElectricPowerQualitySummary() {
-		assertEquals(ElectricPowerQualitySummary.class,
-				electricPowerQualitySummary.getClass());
+		assertEquals(ElectricPowerQualitySummary.class, electricPowerQualitySummary.getClass());
 	}
 
 }
